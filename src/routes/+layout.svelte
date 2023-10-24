@@ -6,9 +6,9 @@
 <body>
     <Nav />
     <Aside />
+    <slot />
 </body>
 
-<slot></slot>
 
 <style>
  body {

@@ -1,6 +1,19 @@
 <script>
- import { studentData } from '../data.js';
- const tableHeaders = ["Id", "Surname", "Name", "DNI"];
+  import { onMount } from 'svelte';
+  let studentData;
+
+  onMount(async () => {
+    const url = 'http://localhost:3000/students';
+
+    try {
+      const response = await fetch(url);
+      const data = await response.json();
+      studentData = data;
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  });
+ const tableHeaders = ["Id", "FID" ,"Surname", "Name", "DNI"];
 </script>
 
 <style>
@@ -30,13 +43,18 @@
     </tr>
   </thead>
   <tbody>
+  {#if studentData}
     {#each studentData as item}
       <tr>
         <td>{item.id}</td>
+        <td>{item.id_fingerprint}</td>
         <td>{item.surname}</td>
         <td>{item.name}</td>
         <td>{item.dni}</td>
       </tr>
     {/each}
+  {:else}
+  <p>No hay datos disponibles</p>
+  {/if}
   </tbody>
 </table>

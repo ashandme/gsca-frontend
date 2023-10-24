@@ -10,25 +10,27 @@
      padding: 15px 20px; /* Increase top and bottom padding */
      background-color: #222; /* Change the background color */
      color: white;
-     height: 120px; /* Increase the height of the navigation bar */
+     height: 110px; /* Increase the height of the navigation bar */
  }
 
  img {
-     width: 100%; /* Increase the size of the logo */
-     height: auto;
+     width: 50%; /* Increase the size of the logo */
+     margin-left: 85px;
  }
 
  .logo {
      margin-right: 20px; /* Increase the margin for the logo */
  }
  .title {
-     font-family: sans-serif;
+     margin-top: 90px;
+    font-family: 'Roboto';
+    margin-right: -6px;
  }
 </style>
 
 <nav>
     <div class="logo">
-        <img src="logo.png" alt="Otto Krause" />
+        <img src="logo2.png" alt="Otto Krause" />
     </div>
     <div class="title">{title}</div>
 </nav>
