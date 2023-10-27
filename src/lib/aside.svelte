@@ -31,13 +31,13 @@
     </div>
     <div class="opciones">
         <div class="componente">
-            <a href="#">Registro Clases</a>
+            <a href="/">Registro Clases</a>
         </div>
         <div class="componente ">
-            <a href="#">Registro Usuarios</a>
+            <a href="/registro-usuarios">Registro Usuarios</a>
         </div>
         <div class="componente">
-            <a href="#">Configuración</a>
+            <a href="/configuracion">Configuración</a>
         </div>
     </div>
     
@@ -54,13 +54,13 @@
     </div>
     <div class="opciones">
         <div class="componente">
-            <a href="#">Registro Clases</a>
+            <a href="/">Registro Clases</a>
         </div>
         <div class="componente ">
-            <a href="#">Registro Usuarios</a>
+            <a href="/registro-usuarios">Registro Usuarios</a>
         </div>
         <div class="componente">
-            <a href="#">Configuración</a>
+            <a href="/configuracion">Configuración</a>
         </div>
     </div>
     
