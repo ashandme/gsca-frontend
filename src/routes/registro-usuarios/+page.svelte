@@ -13,6 +13,6 @@
         </div>
     </main>
     <div class="crear-clase-button">
-        <button type="button">Crear Usuario</button>
+        <a href="/registro-usuarios/crear-usuario">Crear Usuario</a>
     </div>
 </body>
